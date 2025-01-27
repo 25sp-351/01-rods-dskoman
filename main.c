@@ -94,6 +94,7 @@ int main(int argc, char *argv[]) {
     printf("%s\n", "EOF");
 
     // Sort the cutting list
+    // Fun fact: it doesn't work :))) i'm not crying
     InsertionSort(rod_cut_array, rod_cut_array_size);
 
     return 0;
@@ -120,9 +121,6 @@ void InsertionSort(IntIntPair **pair_array, int n) {
         pair_array[j + 1] = pair_array[i];
     }
 }
-
-// Rod cutting algorithm (recursive)
-// Credit: GeeksForGeeks
 
 int CutRod(IntIntPair **price_array, int array_size) {
     return 0;
